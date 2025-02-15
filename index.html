@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب کردنەوەی خەرجی ڕاستەڕێ</title>
+    <link rel="stylesheet" href="styale.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ABDULKHALQ KHOSHNAW</h1>
+        <div class="form-result-container">
+            <form id="depreciationForm">
+                <label for="cost">کۆلفەی مەجود:</label>
+                <input type="number" id="cost" required>
+
+                <label for="life">چەند ساڵی بەکار هینایە:</label>
+                <input type="number" id="life" required>
+
+                <label for="salvage">بەهای خوردە:</label>
+                <input type="number" id="salvage" required>
+
+                <button type="submit">حسابکە بزانە تەواوە</button>
+            </form>
+
+            <div id="result" class="hidden">
+                <h2>ئەنجامەکان:</h2>
+                <p>خەرجی ساڵانە: <span id="annualDepreciation"></span></p>
+                <table id="depreciationTable">
+                    <thead>
+                        <tr>
+                            <th>ساڵ</th>
+                            <th>خەرجی ساڵانە</th>
+                            <th>کۆی خەرجەکان</th>
+                            <th>بەهای مانەوە</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
